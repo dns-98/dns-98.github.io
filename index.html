@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extraction Shooter Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="poi-form" style="position: absolute; background: white; padding: 10px; display: none; z-index: 1000;">
+        <label>Nade Type: 
+            <select id="poi-type">
+                <option value="smoke">smoke</option>
+                <option value="flash">flash</option>
+                <option value="grenade">grenade</option>
+                <option value="fire">fire</option>
+            </select>
+        </label><br>
+        <label>Click Type: 
+            <select id="click-type">
+                <option value="LEFT CLICK">LEFT CLICK</option>
+                <option value="RIGHT CLICK">RIGHT CLICK</option>
+                <option value="L+R CLICK">L+R CLICK</option>
+            </select>
+        </label><br>
+        <label>Details: <input type="text" id="poi-details"></label><br>
+        <button onclick="submitPOI()">Add Marker</button>
+        <button onclick="cancelPOI()">Cancel</button>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
