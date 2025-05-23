@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="map-controls" style="position: absolute; top: 10px; left: 10px; z-index: 1001; background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+        <label for="map-selector">Vybrat mapu:</label>
+        <select id="map-selector" onchange="changeMap()">
+            </select>
+        <button id="add-marker-btn" onclick="toggleAddMarkerMode()">Přidat Marker</button>
+    </div>
     <div id="map"></div>
     <div id="poi-form" style="position: absolute; background: white; padding: 10px; display: none; z-index: 1000;"><br>
     </div>
